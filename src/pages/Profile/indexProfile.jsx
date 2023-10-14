@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import { Input } from "../../components/Input/indexInput";
 import { Container, Form, Avatar } from "./stylesProfile";
 import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from "react-icons/fi";
@@ -62,6 +63,8 @@ export function Profile() {
                 </button>
 
             </Form>
+
+            <Footer/>
 
         </Container>
     )

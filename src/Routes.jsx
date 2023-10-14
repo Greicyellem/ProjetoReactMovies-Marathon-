@@ -8,6 +8,8 @@ import AudioVisual from './pages/AudioVisual.jsx'
 import { SignIn } from './pages/SignIn/indexSignIn.jsx'
 import { Profile } from './pages/Profile/indexProfile.jsx'
 
+
+
 export const  Routers = () => {
   return (
     <BrowserRouter> 

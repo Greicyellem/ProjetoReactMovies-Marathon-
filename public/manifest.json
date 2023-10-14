@@ -1,0 +1,7 @@
+{
+    "short_name": "Marathon",
+    "name": "Marathon: Encontre filme e séries aqui",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait-primary"
+}

@@ -34,12 +34,13 @@ const Home = () => {
   }, [tipoAtual]);
 
   return (
-    <div className="container">
+      <div className="container">
       <div className="button"> 
-      <button className="button-fs" onClick={() => setTipoAtual("filme")}> Filmes </button>
+      <button className="button-fs" onClick={() => setTipoAtual("filme")} > Filmes </button>
       <button className="button-fs" onClick={() => setTipoAtual("serie")}> Séries </button>
       </div>
-      <h2 className="title"> Em alta:</h2>
+
+      <h2 className="title"> Em alta: </h2>
       <div className="movies-container">
         {audioVisuais.length === 0 && <p> Carregando... </p>}
         {audioVisuais.length > 0 &&

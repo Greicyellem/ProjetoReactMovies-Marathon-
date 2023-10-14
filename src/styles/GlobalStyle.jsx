@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
 *{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Young Serif', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -68,26 +68,31 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-top: 15%;
-    margin-left: 10%;
+    margin-top: 1%;
+    /* margin-left: 20%; */
     text-shadow: 0 0 0.2em rgb(27, 10, 139), 0 0 0.2em rgb(9, 23, 85), 0 0 0.2em rgb#ffffff;
     color: ${({ theme }) => theme.text};
-        
+    color: #37415d;
+    background-color: #acb4cb;
+    border-radius: 4px;
+}
+
+.pipoca-home {
+    width: -webkit-fill-available;
+    margin-top: -50px;
 }
 
 .title-home {
     font-size: 35px;
-    background: ${({ theme }) => theme.body};
-    padding: 20px;
-    color: ${({ theme }) => theme.text};
-
+    padding: 10px;
+    align-self: center;
 }
 
 .p-home {
     font-size: 25px;
-    background: ${({ theme }) => theme.body};
-    padding: 20px;
-    ${({ theme }) => theme.text}
+    padding: 10px;
+    ${({ theme }) => theme.text};
+    align-self: center;
 
 }
 
@@ -269,26 +274,12 @@ a:hover{
     padding: 12px 20px;
     border-radius: 8px;
     border: none;
+    background-color: whitesmoke ;
 }
 
 #navbar input:hover {
     transform: scale(1.1); 
-    transition: .7s;
-}
-
-#navbar form button {
-    border-radius: 8px;
-    color: white;
-    padding: .2rem;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: .4s;
-}
-
-#navbar form button:hover {
-    transform: scale(1.1);  
+    transition: .8s;
 }
 
 .menu {
@@ -308,18 +299,17 @@ a:hover{
     font-size: 30px;
     transition: 0.5s;
     color: ${({ theme }) => theme.text};
-
 }
 
 .button-menu:hover {
-    transform: scale(1.2); 
+    transform: scale(1.3); 
 }
 
 .span-menu {
     padding: 8px;
     margin: 30px;
-    line-height: 50px;
-    font-size: 20px;
+    line-height: 70px;
+    font-size: 22px;
     color: ${({ theme }) => theme.text};
     font-weight: 700;
 
@@ -351,16 +341,15 @@ a:hover{
 
 .check-tema{
     width: 23px;
-   height: 23px;
+    height: 23px;
 }
 
 .button-login {
-    width: 500px;
+    width: 400px;
     background: none;
     align-items: center;
     justify-content: center;
 }
-
 
 .footer {
     background: ${({ theme }) => theme.body};
@@ -371,7 +360,7 @@ a:hover{
   bottom: 0;
   left: 0;  
   position: fixed;
-  border-bottom: 1px solid #37415d ;
+  border-bottom: 1px solid #727d99 ;
 
 }
 
@@ -410,3 +399,4 @@ a:hover{
 
     
 `;
+

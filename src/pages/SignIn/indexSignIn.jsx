@@ -47,7 +47,7 @@ export function SignIn(){
                 <FcGoogle/> </button>
 
                 
-                <a href="/cadastro">
+                <a href="/profile">
                     Criar conta
                 </a>
             

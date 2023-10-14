@@ -5,7 +5,6 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     background-color: #586077;
-    color: white;
     margin-bottom: 8px;
     border-radius: 10px;
 
@@ -13,13 +12,10 @@ export const Container = styled.div`
         height: 56px;
         width: 100%;
         padding: 12px;
-        color: white;
-        background: transparent;
+        background: #586077;
         border: none;
-
-        &:placeholder {
-            color: gray;
-        }
+        font-size: 20px;
+        border-radius: 10px;
 
     }
 

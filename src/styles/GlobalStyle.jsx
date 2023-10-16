@@ -79,7 +79,6 @@ a:hover{
 
 .pipoca-home {
     width: -webkit-fill-available;
-    margin-top: -50px;
 }
 
 .title-home {
@@ -397,6 +396,7 @@ a:hover{
     color: ${({ theme }) => theme.text};
 }
 
-    
 `;
+
+
 

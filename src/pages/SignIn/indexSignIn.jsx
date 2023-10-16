@@ -5,7 +5,6 @@ import Footer from '../../components/Footer';
 import { FcGoogle } from 'react-icons/fc'
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { auth } from '../../services/firebase';
-import { useState } from 'react';
 
 
 export function SignIn(){

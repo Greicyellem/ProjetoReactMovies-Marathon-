@@ -5,13 +5,13 @@ export const Container = styled.div `
 
     > header {
         max-width: 100%;
-        height: 144px;
-        margin-top: 120px;
+        height: 44px;
+        margin-top: 20px;
 
         background-color: ${({ theme }) => theme.header};
         display: flex;
         align-items: center;
-        padding: 0 124px;
+        padding: 10px 84px;
 
         svg {
             color: #e9e5e1;
@@ -26,8 +26,9 @@ export const Container = styled.div `
 
 export const Form = styled.form`
     max-width: 340px;
-    margin: 30px auto 0;
+    margin: 50px auto 0;
     text-align: center;
+    
 
     >div:nth-child(4) {
         margin-top: 26px;
@@ -35,6 +36,7 @@ export const Form = styled.form`
 
     > button {
         margin-top: 20px;
+        margin-bottom: 150px;
         font-size: 16px;
         padding: 10px 48px;
         border-radius: 10px;
@@ -42,8 +44,6 @@ export const Form = styled.form`
         color: gray;
         background-color: #f7d354;
     
-       
-
         &:hover{
             background-color: #e3b613;
             cursor: pointer;
@@ -53,7 +53,7 @@ export const Form = styled.form`
 
 export const Avatar = styled.div`
     position: relative;
-    margin: -130px auto 32px;
+    margin: 10px auto 32px;
     width: 186px;
     height: 186px;
 
@@ -91,7 +91,9 @@ export const Avatar = styled.div`
 
     h1{
         text-align-last: center;
+        display: flex;
     }
+
 
 
     

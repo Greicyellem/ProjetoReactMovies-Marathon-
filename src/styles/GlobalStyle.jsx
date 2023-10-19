@@ -69,7 +69,6 @@ a:hover{
     flex-direction: column;
     align-items: start;
     margin-top: 1%;
-    /* margin-left: 20%; */
     text-shadow: 0 0 0.2em rgb(27, 10, 139), 0 0 0.2em rgb(9, 23, 85), 0 0 0.2em rgb#ffffff;
     color: ${({ theme }) => theme.text};
     color: #37415d;
@@ -78,7 +77,16 @@ a:hover{
 }
 
 .pipoca-home {
-    width: -webkit-fill-available;
+    width: 700px;
+
+
+}
+
+.dados-user {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .title-home {
@@ -92,7 +100,6 @@ a:hover{
     padding: 10px;
     ${({ theme }) => theme.text};
     align-self: center;
-
 }
 
 .button {

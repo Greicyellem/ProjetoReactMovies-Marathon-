@@ -52,7 +52,10 @@ const Movie = () => {
   }, []);
 
   return (
+
+    
     <div>
+      
       {movie && (
         <div className="movie-page">
           <MovieCard movie={movie} showLink={false} />

@@ -3,56 +3,45 @@ import { Input } from '../../components/Input/indexInput';
 import { FiMail, FiLock } from 'react-icons/fi'
 import Footer from '../../components/Footer';
 import { FcGoogle } from 'react-icons/fc'
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 import { auth } from '../../services/firebase';
+import { useContext, useEffect } from 'react';
+import { UserContext } from '../../context/userContext';
 
 
 export function SignIn(){
-    function handleGoogleSingIn() {
-        const provider = new GoogleAuthProvider();
-        signInWithPopup(auth, provider)
-        .then((result) => {
-            console.log(result.user);
-        })
+     
+    const {user, updateUser, Logout, isAutenticated} = useContext (UserContext)
 
-        .cath((error) => {
-            console.log(error);
-        })
+    console.log(user)
+    
+    async function handleGoogleSingIn() {
+       const provider = new GoogleAuthProvider();
 
+       const {user: { displayName, email, photoURL }} = await signInWithPopup(auth, provider)
+       if (displayName) {
+        updateUser(displayName, email, photoURL)
+       }
     }
+
+    if (isAutenticated) {
+
     return (
         <Container> 
             <Form> 
-                <h1> Login de usuário </h1>
+            <h1> Login de usuário </h1>
 
-                <h2> Faça seu login </h2>
-                <Input
-                placeholder='E-mail'
-                type='text'
-                icon={FiMail}
-                />
+                <div className='dados-user'>
+                <span> {user.displayName} </span>
+                <span> {user.email} </span>
+                </div>
 
-                <Input
-                placeholder='Senha'
-                type='password'
-                icon={FiLock}
-                />
-
-                <button type='button'> Entrar </button>
-
-                <button type='button' className='button-login' onClick={handleGoogleSingIn}>
-                
-                Entrar com o google  
-                <FcGoogle/> </button>
-
-                
+             
+                <button type='button' className='button-login' onClick={Logout}> Sair da conta </button>                
                 <a href="/profile">
                     Criar conta
                 </a>
-            
             </Form>
-
-
             <Background> </Background>
 
             <Footer> </Footer>
@@ -60,4 +49,26 @@ export function SignIn(){
 
         </Container>
     )
+}
+
+return (
+    <Container> 
+        <Form> 
+            <h1> Login de usuário </h1>
+            <button type='button' className='button-login' onClick={handleGoogleSingIn}>
+            Entrar com o Google  
+            <FcGoogle/> </button>
+            <a href="/profile">
+                Criar conta
+            </a>
+        
+        </Form>
+
+        <Background> </Background>
+
+        <Footer> </Footer>
+
+
+    </Container>
+)
 }

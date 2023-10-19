@@ -5,6 +5,8 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./themes";
 import { GlobalStyle } from "./styles/GlobalStyle";
 import Drawer from "./components/Drawer";
+import { UserProvider } from "./context/userContext";
+
 
 
 function App() {
@@ -15,13 +17,14 @@ function App() {
   return (
     <ThemeProvider theme={themeDark ? darkTheme : lightTheme}>
       <GlobalStyle />
-
+      <UserProvider> 
       <div className="App">
         <Drawer isOpen={isOpen} onClose={toggleIsOpen} isThemeDark={themeDark} toggleThemeDark={() => setthemeDark(!themeDark)
  }/>
         <NavBar onClickButtonMenu={toggleIsOpen}  />
         <Outlet> </Outlet>
       </div>
+      </UserProvider>
     </ThemeProvider>
   );
 }

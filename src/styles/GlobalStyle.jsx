@@ -79,14 +79,12 @@ a:hover{
 .pipoca-home {
     width: 700px;
 
-
 }
 
 .dados-user {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    
 }
 
 .title-home {

@@ -1,6 +1,4 @@
 import { Container, Form, Background } from '../SignIn/stylesSignIn';
-import { Input } from '../../components/Input/indexInput';
-import { FiMail, FiLock } from 'react-icons/fi'
 import Footer from '../../components/Footer';
 import { FcGoogle } from 'react-icons/fc'
 import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';

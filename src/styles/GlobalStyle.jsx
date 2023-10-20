@@ -91,6 +91,8 @@ a:hover{
     padding: 10px;
     align-self: center;
     background-color: #727d99;
+    border-radius: 10px;
+
 }
 
 .p-home {
@@ -99,6 +101,8 @@ a:hover{
     ${({ theme }) => theme.text};
     align-self: center;
     background-color: #727d99;
+    border-radius: 10px;
+
 
 }
 

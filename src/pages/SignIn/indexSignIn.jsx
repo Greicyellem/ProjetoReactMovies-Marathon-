@@ -54,7 +54,7 @@ return (
     <Container> 
         <Form> 
         <h1> Login de usuário </h1>
-        <h2> Faça login e inicie  busca da sua próxima Maratona! </h2>
+        <h2> Faça login e inicie a busca da sua próxima Maratona! </h2>
             <button type='button' className='button-login' onClick={handleGoogleSingIn}>
             Entrar com o Google  
             <FcGoogle/> </button>

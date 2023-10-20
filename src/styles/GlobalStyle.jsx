@@ -102,8 +102,6 @@ a:hover{
     align-self: center;
     background-color: #727d99;
     border-radius: 10px;
-
-
 }
 
 .button {

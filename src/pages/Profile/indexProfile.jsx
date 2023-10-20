@@ -13,7 +13,6 @@ const DadosDoUsuario = () => {
 
     return (<> </>)
 }
-   
 
 export function Profile() {
     return(

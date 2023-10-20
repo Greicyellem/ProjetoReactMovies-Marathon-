@@ -68,12 +68,11 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-top: 1%;
     text-shadow: 0 0 0.2em rgb(27, 10, 139), 0 0 0.2em rgb(9, 23, 85), 0 0 0.2em rgb#ffffff;
-    color: ${({ theme }) => theme.text};
     color: #37415d;
-    background-color: #acb4cb;
     border-radius: 4px;
+    margin: 50px;
+    color: white;
 }
 
 .pipoca-home {
@@ -91,6 +90,7 @@ a:hover{
     font-size: 35px;
     padding: 10px;
     align-self: center;
+    background-color: #727d99;
 }
 
 .p-home {
@@ -98,6 +98,8 @@ a:hover{
     padding: 10px;
     ${({ theme }) => theme.text};
     align-self: center;
+    background-color: #727d99;
+
 }
 
 .button {

@@ -4,7 +4,7 @@ import { FiMail, FiLock } from 'react-icons/fi'
 import Footer from '../../components/Footer';
 import { FcGoogle } from 'react-icons/fc'
 import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
-import { auth } from '../../services/firebase';
+import { auth } from '../../../services/firebase';
 import { useContext, useEffect } from 'react';
 import { UserContext } from '../../context/userContext';
 
@@ -29,7 +29,8 @@ export function SignIn(){
     return (
         <Container> 
             <Form> 
-            <h1> Login de usuário </h1>
+
+            <h1> Usuário: </h1>
 
                 <div className='dados-user'>
                 <span> {user.displayName} </span>
@@ -54,7 +55,8 @@ export function SignIn(){
 return (
     <Container> 
         <Form> 
-            <h1> Login de usuário </h1>
+        <h1> Login de usuário </h1>
+        <h2> Faça login e inicie  busca da sua próxima Maratona! </h2>
             <button type='button' className='button-login' onClick={handleGoogleSingIn}>
             Entrar com o Google  
             <FcGoogle/> </button>

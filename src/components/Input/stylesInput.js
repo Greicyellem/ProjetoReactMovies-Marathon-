@@ -4,7 +4,7 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #586077;
+    background-color: whitesmoke;
     margin-bottom: 8px;
     border-radius: 10px;
 
@@ -12,7 +12,7 @@ export const Container = styled.div`
         height: 56px;
         width: 100%;
         padding: 12px;
-        background: #586077;
+        background: whitesmoke;
         border: none;
         font-size: 20px;
         border-radius: 10px;
@@ -21,6 +21,7 @@ export const Container = styled.div`
 
     > svg {
             margin-left: 16px;
+            color: #586077;
         }
 
 ` 

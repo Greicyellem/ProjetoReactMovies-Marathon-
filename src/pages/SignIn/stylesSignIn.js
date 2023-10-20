@@ -6,11 +6,10 @@ export const Container = styled.div `
     display: flex;
     align-items: stretch;
     background-blend-mode: luminosity;
-
 `;
 
 export const Form = styled.form`
-    padding: 136px;
+    padding:  136px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,6 +25,8 @@ export const Form = styled.form`
     >h2 {
         font-size: 24px;
         margin: 48px 0;
+        color: #f7d354;
+
 
     }
 
@@ -35,7 +36,7 @@ export const Form = styled.form`
     }
 
     > a{
-        margin-top: 84px;
+        margin-top: 4px;
         background: none;
 
     }

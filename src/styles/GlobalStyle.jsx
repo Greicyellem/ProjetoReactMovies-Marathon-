@@ -64,6 +64,10 @@ a:hover{
 
 }
 
+.container-home {
+    max-width: 100%;
+}
+
 .home {
     display: flex;
     flex-direction: column;
@@ -71,13 +75,10 @@ a:hover{
     text-shadow: 0 0 0.2em rgb(27, 10, 139), 0 0 0.2em rgb(9, 23, 85), 0 0 0.2em rgb#ffffff;
     color: #37415d;
     border-radius: 4px;
-    margin: 50px;
+    margin: 10%;
     color: white;
-}
 
-.pipoca-home {
-    width: 700px;
-
+    
 }
 
 .dados-user {
@@ -90,18 +91,15 @@ a:hover{
     font-size: 35px;
     padding: 10px;
     align-self: center;
-    background-color: #727d99;
     border-radius: 10px;
-
 }
 
 .p-home {
     font-size: 25px;
     padding: 10px;
-    ${({ theme }) => theme.text};
     align-self: center;
-    background-color: #727d99;
     border-radius: 10px;
+
 }
 
 .button {

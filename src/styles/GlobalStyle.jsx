@@ -75,7 +75,7 @@ a:hover{
     text-shadow: 0 0 0.2em rgb(27, 10, 139), 0 0 0.2em rgb(9, 23, 85), 0 0 0.2em rgb#ffffff;
     color: #37415d;
     border-radius: 4px;
-    margin:20px;
+    margin:10%;
     color: white;
 
     

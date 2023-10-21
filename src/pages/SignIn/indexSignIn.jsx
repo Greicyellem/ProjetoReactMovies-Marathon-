@@ -28,9 +28,17 @@ export function SignIn(){
         <Container> 
             <Form> 
 
-            <h1> Usuário: </h1>
+            <h1> Logado como: </h1>
 
                 <div className='dados-user'>
+                    <img 
+                    className='foto-user'
+                    src={user.photoURL}
+                    width={100}
+                    height={100}
+                    />
+
+                
                 <span> {user.displayName} </span>
                 <span> {user.email} </span>
                 </div>
@@ -55,7 +63,7 @@ return (
         <Form> 
         <h1> Login de usuário </h1>
         <h2> Faça login e inicie a busca da sua próxima Maratona! </h2>
-            <button type='button' className='button-login' onClick={handleGoogleSingIn}>
+            <button type='button' className='button-login' onClick={handleGoogleSingIn} >
             Entrar com o Google  
             <FcGoogle/> </button>
             <a href="/profile">

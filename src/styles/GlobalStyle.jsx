@@ -370,6 +370,12 @@ a:hover{
 
 }
 
+.foto-user {
+    border-radius: 50%;
+    align-self: center;
+    margin: 20px;
+}
+
 .social_list {
   display: flex;
   justify-content: center;

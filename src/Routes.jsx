@@ -8,6 +8,7 @@ import AudioVisual from './pages/AudioVisual.jsx';
 import { SignIn } from './pages/SignIn/indexSignIn.jsx';
 import { UserContext } from './context/userContext.jsx';
 import { Profile } from './pages/Profile/indexProfile.jsx';
+import CompleteProfile from './pages/perfil/complete-perfil.jsx';
 
 
 
@@ -26,10 +27,13 @@ export const  Routers = () => {
           <Route path='/' element = {<Home/>}/>
           <Route path='/login' element = {<SignIn/>} />
           <Route path='/profile' element = {<Profile/>}/>
+          <Route path='/perfil' element = {<CompleteProfile/>}/>
+
           <Route element = {<PrivateRoute/>}>          
             <Route path='/movie/:id' element = {<Movie/>}/>
             <Route path='/search' element = {<Search/>}/>
             <Route path='/series' element = {<AudioVisual/>}/>
+
           </Route>
           </Route>
         </Routes>

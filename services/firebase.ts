@@ -2,6 +2,15 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth'
 
+console.log({
+  apiKey: process.env.VITE_FIREBASE_APIKEY,
+  authDomain: process.env.VITE_AUTHDOMAIN,
+  projectId: process.env.VITE_PROJECTID,
+  storageBucket: process.env.VITE_STORAGEBUCKET,
+  messagingSenderId: process.env.VITE_MESSAGINGSENDERID,
+  appId: process.env.VITE_APPID,
+  measurementId: process.env.VITE_MEASUREMENTID
+})
 const firebaseConfig = {
   apiKey: process.env.VITE_FIREBASE_APIKEY,
   authDomain: process.env.VITE_AUTHDOMAIN,

@@ -72,7 +72,7 @@ const Drawer = ({ isOpen, onClose, toggleThemeDark, isThemeDark }) => {
                 </li>
             
                 <li className="items-ul">
-                <a href={"/profile"}>
+                <a href={"/perfil"}>
                     <div>
                     <span className="span-menu"> <BiUser/> Crie seu perfil </span>
                     </div>

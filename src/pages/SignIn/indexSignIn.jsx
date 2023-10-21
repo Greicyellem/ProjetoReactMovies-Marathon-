@@ -10,8 +10,6 @@ import { UserContext } from '../../context/userContext';
 export function SignIn(){
      
     const {user, updateUser, Logout, isAutenticated} = useContext (UserContext)
-
-    console.log(user)
     
     async function handleGoogleSingIn() {
        const provider = new GoogleAuthProvider();
@@ -45,14 +43,13 @@ export function SignIn(){
 
              
                 <button type='button' className='button-login' onClick={Logout}> Sair da conta </button>                
-                <a href="/profile">
+                <a href="/perfil">
                     Criar conta
                 </a>
             </Form>
             <Background> </Background>
 
             <Footer> </Footer>
-
 
         </Container>
     )

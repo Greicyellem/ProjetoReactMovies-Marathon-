@@ -9,9 +9,9 @@ export const UserProvider = ({ children }) => {
    const [user, setUser] = useState({displayName:'', email:'', photoURL: ''})
    const [isAutenticated, setIsAutenticated] = useState(localStorage.getItem(USUARIO_AUTENTICADO) || false)
 
-   function setUserLocalStorage (autenticado) {
-        localStorage.setItem(USUARIO_AUTENTICADO, autenticado)
-   }
+   function setUserLocalStorage (autenticado, user) {
+        localStorage.setItem(USUARIO_AUTENTICADO, {autenticado, user})
+    }
 
    async function Logout() {
     await getAuth().signOut() 
@@ -21,9 +21,13 @@ export const UserProvider = ({ children }) => {
 }
    const updateUser = (displayName, email, photoURL) => {
     setUser({displayName, email, photoURL})
-    setUserLocalStorage(true)
+    setUserLocalStorage(true, {displayName, email, photoURL})
     setIsAutenticated(true)
+
+
    }
+   console.log('Usuário', user)
+
    return (
     <UserContext.Provider value={{ user, updateUser, isAutenticated, setIsAutenticated, Logout }}>
         {children} 

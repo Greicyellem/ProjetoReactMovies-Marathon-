@@ -1,29 +1,21 @@
-import Drawer from "../../components/Drawer";
-import NavBar from "../../components/NavBar";
-import "../../components/CompleteProfileForms";
-import React,{useContext, useState} from 'react';
-import { UserContext, UserProvider } from "../../context/userContext";
+import CompleteProfileForm from "../../components/CompleteProfileForm";
+import Footer from "../../components/Footer";
+
 
 
 const CompleteProfile = () => {
-
-    const {data: user} = useContext();
     
     return(
-        <main className='min-h-screen'>
-       <NavBar/>
-       <Drawer/>
-
-        {session? (
-            <div>
-                <h1>Formulário para completar o cadastro usando dados da sessão</h1>
-                <CompleteProfileForm user={user}/>
+        <main>
+            <div className="cadastro">
+                <h1>Faça seu cadastro!</h1>
+                <img className="img-profile" src='perfil.png'
+                />
             </div>
 
-        ) : (
-            <h1>Não logado</h1>
+            <CompleteProfileForm/>
 
-        )}
+            <Footer/>
 
         </main>
     );

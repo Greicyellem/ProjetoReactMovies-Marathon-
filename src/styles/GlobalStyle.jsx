@@ -77,8 +77,53 @@ a:hover{
     border-radius: 4px;
     margin:10%;
     color: white;
+}
 
-    
+.cadastro{
+    text-align: center;
+    margin: 30px;
+}
+
+.input{
+    max-width: 540px;
+    height: 400px;
+    margin: 50px auto 0;
+    text-align: center;
+    color: #37415d;
+    border-radius: 10px;
+
+    >div:nth-child(4) {
+        margin-top: 26px;
+    }
+}
+
+.form-input {
+ padding: 10px;
+ margin: 10px;
+ background-color: whitesmoke;
+ border-radius: 15px;
+ padding: 15px;
+
+}
+
+.bottom-input {
+        margin-top: 20px;
+        margin-bottom: 150px;
+        font-size: 16px;
+        padding: 10px 48px;
+        border-radius: 10px;
+        border: none;
+        color: gray;
+        background-color: #f7d354;
+        text-decoration: none;
+}
+
+.dados-input{
+    padding: 10px;
+}
+
+.img-profile{
+    width: 150px;
 }
 
 .dados-user {

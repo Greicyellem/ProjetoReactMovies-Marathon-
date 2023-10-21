@@ -75,7 +75,7 @@ a:hover{
     text-shadow: 0 0 0.2em rgb(27, 10, 139), 0 0 0.2em rgb(9, 23, 85), 0 0 0.2em rgb#ffffff;
     color: #37415d;
     border-radius: 4px;
-    margin: 10%;
+    margin:20px;
     color: white;
 
     
@@ -106,7 +106,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px 50px;
+    margin: 10px 10px;
     gap: 45px ;
     color: ${({ theme }) => theme.text};
 }
@@ -243,6 +243,10 @@ a:hover{
 
 .movies-container div svg{
     color: #f7d354
+}
+
+.seta{
+    align-self: center;
 }
 
 .movies-container div a:hover {

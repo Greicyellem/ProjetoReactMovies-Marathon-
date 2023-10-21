@@ -10,6 +10,7 @@ const Home = () => {
     <div className='home'>
       <h2 className='title-home'> Bem vindo(a) ao Marathon, onde a sua busca começa!</h2>
       <p className='p-home'>Milhões de filmes e séries para descobrir. Explore já! </p>
+
     </div>     
      <Footer> </Footer>
 

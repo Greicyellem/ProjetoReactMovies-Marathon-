@@ -38,8 +38,13 @@ const Home = () => {
      
       <div className='container'>
     <div className='home'>
-      <h2 className='title-home'> Bem vindo(a) ao Marathon, onde a sua busca começa!</h2>
-      <p className='p-home'>Milhões de filmes e séries para descobrir. Explore já! </p>
+      <h2 className='title-home'> Faça sua busca e comece a maratonar! </h2>
+      <img 
+      src='seta.gif' 
+      alt= 'seta'
+      className="seta"
+      />
+
       </div>
       </div>
 

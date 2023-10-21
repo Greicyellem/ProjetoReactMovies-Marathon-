@@ -39,11 +39,7 @@ const Home = () => {
       <div className='container'>
     <div className='home'>
       <h2 className='title-home'> Faça sua busca e comece a maratonar! </h2>
-      <img 
-      src='seta.gif' 
-      alt= 'seta'
-      className="seta"
-      />
+      
 
       </div>
       </div>

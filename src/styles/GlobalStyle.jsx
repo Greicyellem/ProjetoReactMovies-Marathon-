@@ -245,9 +245,6 @@ a:hover{
     color: #f7d354
 }
 
-.seta{
-    align-self: center;
-}
 
 .movies-container div a:hover {
     background-color: #f7d354;

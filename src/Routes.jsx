@@ -9,14 +9,12 @@ import { SignIn } from './pages/SignIn/indexSignIn.jsx';
 import { UserContext } from './context/userContext.jsx';
 import CompleteProfile from './pages/perfil/complete-perfil.jsx';
 
-
-
-const PrivateRoute = () => {
-  const { isAutenticated } = useContext (UserContext)
+// const PrivateRoute = () => {
+//   const { isAutenticated } = useContext (UserContext)
  
-  if (!isAutenticated) return <Navigate to='/login' replace/>
-  return <Outlet/>
-}
+//   if (!isAutenticated) return <Navigate to='/login' replace/>
+//   return <Outlet/>
+// }
 
 export const  Routers = () => {
   return (

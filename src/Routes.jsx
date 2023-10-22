@@ -26,13 +26,13 @@ export const  Routers = () => {
           <Route path='/' element = {<Home/>}/>
           <Route path='/login' element = {<SignIn/>} />
           <Route path='/perfil' element = {<CompleteProfile/>}/>
-          <Route element = {<PrivateRoute/>}>          
+          {/* <Route element = {<PrivateRoute/>}>           */}
             <Route path='/movie/:id' element = {<Movie/>}/>
             <Route path='/search' element = {<Search/>}/>
             <Route path='/series' element = {<AudioVisual/>}/>
 
           </Route>
-          </Route>
+          {/* </Route> */}
         </Routes>
     </BrowserRouter>
   );

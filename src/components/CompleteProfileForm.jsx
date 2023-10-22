@@ -2,6 +2,10 @@ import React,{useState, useEffect, useRef, useContext} from "react";
 import { useForm } from 'react-hook-form'
 import AvatarEditor from "react-avatar-editor";
 import { UserContext } from "../context/userContext";
+import { AiFillLock, AiOutlineMail } from "react-icons/ai";
+import { FcPhoneAndroid } from "react-icons/fc";
+import { IoPersonCircleOutline } from "react-icons/io5";
+import { BiPhotoAlbum } from "react-icons/bi";
 
 
 const ZoomSlider = ({zoom, onZoomChange}) => {
@@ -17,7 +21,6 @@ const ZoomSlider = ({zoom, onZoomChange}) => {
     );
 };
 
-
 const CompleteProfileForm = () => {
 
     const {register, setValue} = useForm();
@@ -27,11 +30,11 @@ const CompleteProfileForm = () => {
 
 const {user} = useContext (UserContext)
 
-    // useEffect(() => {
-    //      setValue('name', user.displayName)
-    //      setValue('email', user.email)
+    useEffect(() => {
+         setValue('name', user.displayName)
+         setValue('email', user.email)
 
-    // }, [] )
+    }, [] )
 
     const handleZoomChange = (newZoom) => {
         setZoom(newZoom)
@@ -63,7 +66,6 @@ const {user} = useContext (UserContext)
     const onSubmit = (data) => {
 
     }
-   
 
     return(
         <div> 
@@ -72,7 +74,7 @@ const {user} = useContext (UserContext)
         
             <div className="form-input">
                 <label className="dados-input" htmlFor='name'> 
-                Nome: 
+                <IoPersonCircleOutline/> Nome: 
                 </label>
                 <input {...register('name')}
                 value={user.displayName}
@@ -84,7 +86,7 @@ const {user} = useContext (UserContext)
             
             <div className="form-input">
             <label className="dados-input" htmlFor='email' > 
-                Email: 
+            <AiOutlineMail/> Email: 
                 </label>
                 <input {...register('email')}
                 id='email'
@@ -95,7 +97,7 @@ const {user} = useContext (UserContext)
 
             <div className="form-input">
             <label className="dados-input" htmlFor='phone'> 
-                Telefone: 
+                <FcPhoneAndroid/> Telefone: 
                 </label>
                 <input {...register('phone')} 
                 id='phone' 
@@ -108,7 +110,7 @@ const {user} = useContext (UserContext)
             <div className="form-input">
 
             <label className="dados-input" htmlFor='password'> 
-            Criar senha: 
+            <AiFillLock/> Criar senha: 
             </label>
                <input {...register('password')} 
                placeholder="Criar senha"
@@ -120,7 +122,7 @@ const {user} = useContext (UserContext)
 
             <div className="form-input">
             <label className="dados-input" htmlFor='image'> 
-                Imagem: 
+            <BiPhotoAlbum/> Escolher foto: 
                 </label>
                 <input type='file' 
                 accept="image/*" 
@@ -134,18 +136,21 @@ const {user} = useContext (UserContext)
                 <AvatarEditor
                 ref={editorRef}
                 image={editedImage}
-                width={100}
-                height={100}
-                border={10}
+                width={150}
+                height={150}
+                border={5}
                 color={[255,255,255,0.6]}   
                 rotate={0}
-                scale={zoom}          
+                scale={zoom}
                 
                 />
-                <ZoomSlider zoom={zoom} onZoomChange={handleZoomChange}> </ZoomSlider>
+                <ZoomSlider zoom={zoom} 
+                onZoomChange={handleZoomChange}
+                >
+                </ZoomSlider>
                 
                 <div> 
-                <button type='submit' onClick={handleCancel}>
+                <button className="bottom-input" type='submit' onClick={handleCancel}>
                     Cancelar
                 </button>
                 </div>

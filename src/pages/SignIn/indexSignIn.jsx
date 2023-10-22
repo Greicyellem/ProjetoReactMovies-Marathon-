@@ -42,7 +42,7 @@ export function SignIn(){
              
                 <button type='button' className='button-login' onClick={Logout}> Sair da conta </button>                
                 <a href="/perfil">
-                    Criar conta
+                    Complete seu perfil
                 </a>
             </Form>
             <Background> </Background>

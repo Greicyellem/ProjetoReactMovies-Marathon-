@@ -53,7 +53,6 @@ a:hover{
     padding: 15px 15px;
     transition: 0.5s;
     border: 2px solid #f7d354;
-
 }
 
 .container .title {
@@ -85,26 +84,36 @@ a:hover{
 }
 
 .input{
-    max-width: 540px;
+    max-width: 440px;
     height: 400px;
     margin: 50px auto 0;
     text-align: center;
-    color: #37415d;
+    color: #293045;
     border-radius: 10px;
+    
 
-    >div:nth-child(4) {
-        margin-top: 26px;
+    >div:nth-child(5) {
+        margin-top: 46px;
     }
 }
 
 .form-input {
- padding: 10px;
- margin: 10px;
- background-color: whitesmoke;
+ margin: 8px;
+ background-color: rgb(133, 143, 173);
  border-radius: 15px;
  padding: 15px;
+ font-size: 20px;
 
+ >input{
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+ }
 }
+
+
 
 .bottom-input {
         margin-top: 20px;
@@ -116,6 +125,7 @@ a:hover{
         color: gray;
         background-color: #f7d354;
         text-decoration: none;
+        cursor: pointer;
 }
 
 .dados-input{
@@ -144,7 +154,6 @@ a:hover{
     padding: 10px;
     align-self: center;
     border-radius: 10px;
-
 }
 
 .button {
@@ -290,13 +299,11 @@ a:hover{
     color: #f7d354
 }
 
-
 .movies-container div a:hover {
     background-color: #f7d354;
     padding: 10px auto;
     color: #586077;
     cursor: url("./popcorn-cursor.svg"), auto;
-
 }
 
 #navbar {
@@ -364,7 +371,6 @@ a:hover{
     font-size: 22px;
     color: ${({ theme }) => theme.text};
     font-weight: 700;
-
 }
 
 .items-ul {
@@ -388,7 +394,6 @@ a:hover{
     color: ${({ theme }) => theme.text};
     font-weight: 700;
     padding: 8px;
-
 }
 
 .check-tema{
@@ -401,6 +406,7 @@ a:hover{
     background: none;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .footer {
@@ -413,7 +419,6 @@ a:hover{
   left: 0;  
   position: fixed;
   border-bottom: 1px solid #727d99 ;
-
 }
 
 .foto-user {
@@ -456,6 +461,3 @@ a:hover{
 }
 
 `;
-
-
-

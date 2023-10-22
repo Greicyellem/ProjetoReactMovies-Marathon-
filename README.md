@@ -15,7 +15,7 @@
 
 - Utilização de CSS-in-JS para estilização da aplicação.
 - Realização de operações CRUD com validação.
-- - Realização do carregamento, corte e envio de imagens para um endpoint.
+- Realização do carregamento, corte e envio de imagens para um endpoint.
 - Configuração dos metadados da aplicação (manifest.json, head).
 - Configuração para utilizar temas claro e escuro.
 - Implementação de um Drawer e NavBar para a melhor experiência do usuário.

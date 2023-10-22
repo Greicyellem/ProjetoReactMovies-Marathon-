@@ -3,7 +3,7 @@ import Footer from '../../components/Footer';
 import { FcGoogle } from 'react-icons/fc'
 import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 import { auth } from '../../services/firebase'
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { UserContext } from '../../context/userContext';
 
 
@@ -52,6 +52,7 @@ export function SignIn(){
         </Container>
     )
 }
+
 
 return (
     <Container> 

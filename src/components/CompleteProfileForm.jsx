@@ -30,11 +30,14 @@ const CompleteProfileForm = () => {
 
 const {user} = useContext (UserContext)
 
+// console.log(user)
+
     useEffect(() => {
          setValue('name', user.displayName)
-         setValue('email', user.email)
+         setValue('email', user.email);
+        
 
-    }, [] )
+    }, [user, setValue] )
 
     const handleZoomChange = (newZoom) => {
         setZoom(newZoom)

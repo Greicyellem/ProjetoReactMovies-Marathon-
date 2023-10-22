@@ -5,7 +5,7 @@ import { UserContext } from "../context/userContext";
 import { AiFillLock, AiOutlineMail } from "react-icons/ai";
 import { FcPhoneAndroid } from "react-icons/fc";
 import { IoPersonCircleOutline } from "react-icons/io5";
-import { BiPhotoAlbum } from "react-icons/bi";
+import { BiPhotoAlbum, BiUser } from "react-icons/bi";
 
 
 const ZoomSlider = ({zoom, onZoomChange}) => {
@@ -69,12 +69,11 @@ const {user} = useContext (UserContext)
 
     return(
         <div> 
-            {user ? 
        <form className="input">
         
             <div className="form-input">
                 <label className="dados-input" htmlFor='name'> 
-                <IoPersonCircleOutline/> Nome: 
+                <BiUser/> 
                 </label>
                 <input {...register('name')}
                 value={user.displayName}
@@ -86,7 +85,7 @@ const {user} = useContext (UserContext)
             
             <div className="form-input">
             <label className="dados-input" htmlFor='email' > 
-            <AiOutlineMail/> Email: 
+            <AiOutlineMail/>
                 </label>
                 <input {...register('email')}
                 id='email'
@@ -97,7 +96,7 @@ const {user} = useContext (UserContext)
 
             <div className="form-input">
             <label className="dados-input" htmlFor='phone'> 
-                <FcPhoneAndroid/> Telefone: 
+                <FcPhoneAndroid/>
                 </label>
                 <input {...register('phone')} 
                 id='phone' 
@@ -110,7 +109,7 @@ const {user} = useContext (UserContext)
             <div className="form-input">
 
             <label className="dados-input" htmlFor='password'> 
-            <AiFillLock/> Criar senha: 
+            <AiFillLock/>
             </label>
                <input {...register('password')} 
                placeholder="Criar senha"
@@ -122,7 +121,7 @@ const {user} = useContext (UserContext)
 
             <div className="form-input">
             <label className="dados-input" htmlFor='image'> 
-            <BiPhotoAlbum/> Escolher foto: 
+            <BiPhotoAlbum/>  
                 </label>
                 <input type='file' 
                 accept="image/*" 
@@ -167,7 +166,6 @@ const {user} = useContext (UserContext)
             </div>
 
         </form>
-        : <div> Você não está logado! </div>}
     </div>
     );
 };

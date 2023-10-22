@@ -74,19 +74,18 @@ a:hover{
     text-shadow: 0 0 0.2em rgb(27, 10, 139), 0 0 0.2em rgb(9, 23, 85), 0 0 0.2em rgb#ffffff;
     color: #37415d;
     border-radius: 4px;
-    margin:10%;
+    margin:5%;
     color: white;
 }
 
 .cadastro{
     text-align: center;
-    margin: 30px;
+    margin-top: 30px;
 }
 
 .input{
     max-width: 440px;
     height: 400px;
-    margin: 50px auto 0;
     text-align: center;
     color: #293045;
     border-radius: 10px;
@@ -97,27 +96,33 @@ a:hover{
     }
 }
 
+section{
+    text-align: -webkit-center;
+}
+
 .form-input {
  margin: 8px;
- background-color: rgb(133, 143, 173);
+ background-color: #858fad;
  border-radius: 15px;
  padding: 15px;
- font-size: 20px;
+ font-size: 25px;
+ text-align: left;
 
  >input{
     border: none;
-    padding: 8px;
-    font-size: 16px;
+    padding: 12px;
+    font-size: 20px;
     border-radius: 10px;
-    background-color: whitesmoke;
+    background-color: #9dacd3;
+    width: 340px;
+
  }
+
 }
-
-
 
 .bottom-input {
         margin-top: 20px;
-        margin-bottom: 150px;
+        margin-bottom: 100px;
         font-size: 16px;
         padding: 10px 48px;
         border-radius: 10px;
@@ -130,6 +135,8 @@ a:hover{
 
 .dados-input{
     padding: 10px;
+    align-items: center;
+    vertical-align: text-top;
 }
 
 .img-profile{

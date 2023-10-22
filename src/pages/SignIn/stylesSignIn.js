@@ -26,8 +26,6 @@ export const Form = styled.form`
         font-size: 24px;
         margin: 48px 0;
         color: #f7d354;
-
-
     }
 
     > p{ 
@@ -36,8 +34,17 @@ export const Form = styled.form`
     }
 
     > a{
-        margin-top: 4px;
+        margin-top: 40px;
         background: none;
+        background-color: #f7d354;
+        padding: 10px;
+        border-radius: 10px;
+        color: #7e8391;
+
+        &:hover{
+            background-color: #e3b613;
+            cursor: pointer;
+        }
 
     }
     >button {

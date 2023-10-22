@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { AiOutlineCloseCircle, AiOutlineHome } from "react-icons/ai";
-import { BiCameraMovie, BiMoviePlay, BiLogIn, BiPencil, BiUser } from "react-icons/bi";
+import { BiMoviePlay, BiLogIn, BiUser } from "react-icons/bi";
 
 
 

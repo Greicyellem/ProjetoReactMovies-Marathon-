@@ -26,7 +26,6 @@ export const UserProvider = ({ children }) => {
 
 
    }
-   console.log('Usuário', user)
 
    return (
     <UserContext.Provider value={{ user, updateUser, isAutenticated, setIsAutenticated, Logout }}>

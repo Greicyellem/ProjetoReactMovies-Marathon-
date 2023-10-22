@@ -6,18 +6,17 @@ import Footer from "../../components/Footer";
 const CompleteProfile = () => {
     
     return(
-        <main>
+        <section>
             <div className="cadastro">
                 <h1>Faça seu cadastro!</h1>
-                <img className="img-profile" src='perfil.png'
-                />
+                <img className="img-profile" src='perfil.png'/>
             </div>
 
             <CompleteProfileForm/>
 
             <Footer/>
 
-        </main>
+        </section>
     );
 }
 export default CompleteProfile;

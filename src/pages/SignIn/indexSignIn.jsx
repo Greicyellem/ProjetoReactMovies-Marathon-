@@ -35,8 +35,6 @@ export function SignIn(){
                     width={100}
                     height={100}
                     />
-
-                
                 <span> {user.displayName} </span>
                 <span> {user.email} </span>
                 </div>
@@ -63,7 +61,7 @@ return (
             <button type='button' className='button-login' onClick={handleGoogleSingIn} >
             Entrar com o Google  
             <FcGoogle/> </button>
-            <a href="/profile">
+            <a href="/perfil">
                 Criar conta
             </a>
         

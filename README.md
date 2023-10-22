@@ -1,4 +1,4 @@
-# React + Vite
+# React
 
 # Projeto de Desenvolvimento Web com React - Utilizando API The Movie Database
 

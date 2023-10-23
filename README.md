@@ -35,7 +35,7 @@ Essa aplicação foi desenvolvida por Greicyellem Santana como requisito avaliat
 O projeto foi desenvolvido utilizando as seguintes tecnologias e bibliotecas:
 
 - [React](https://reactjs.org/): Uma biblioteca JavaScript para a construção de interfaces de usuário.
-- [TMDB API](https://www.themoviedb.org/documentation/api): A API da TMDB para obter informações sobre filmes e séries de TV.
+- [TMDB API](https://www.themoviedb.org/documentation/api): A API The Movie Database para obter informações sobre filmes e séries de TV.
 - [React Router](https://reactrouter.com/): Para gerenciar a navegação na aplicação.
 
 

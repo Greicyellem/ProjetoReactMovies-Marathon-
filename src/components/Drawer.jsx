@@ -34,7 +34,6 @@ const Drawer = ({ isOpen, onClose, toggleThemeDark, isThemeDark }) => {
             className="check-tema"
             onClick={toggleThemeDark}
             checked={isThemeDark}
-
         >
 
         </input>

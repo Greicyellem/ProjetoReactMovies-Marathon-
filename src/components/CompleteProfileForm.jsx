@@ -30,11 +30,10 @@ const CompleteProfileForm = () => {
 
 const {user} = useContext (UserContext)
 
-// console.log(user)
-
     useEffect(() => {
          setValue('name', user.displayName)
          setValue('email', user.email);
+         setValue('photo', user.photo)
         
 
     }, [user, setValue] )
@@ -74,6 +73,8 @@ const {user} = useContext (UserContext)
         <div> 
        <form className="input">
         
+       <img src={user.photoURL} className="foto-user" />
+
             <div className="form-input">
                 <label className="dados-input" htmlFor='name'> 
                 <BiUser/> 
@@ -85,6 +86,8 @@ const {user} = useContext (UserContext)
                 required
                 />
             </div>
+
+
             
             <div className="form-input">
             <label className="dados-input" htmlFor='email' > 

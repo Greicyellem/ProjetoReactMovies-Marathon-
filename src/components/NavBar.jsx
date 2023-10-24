@@ -41,7 +41,8 @@ const NavBar = ({ onClickButtonMenu }) => {
         />
       </form>
       <Button onClick={onClickButtonMenu} title={<AiOutlineMenu/>}> </Button>
-    </nav>
+      </nav>
+
   );
 };
 
